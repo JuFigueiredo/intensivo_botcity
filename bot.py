@@ -42,7 +42,7 @@ def main():
     ## Fetch the BotExecution with details from the task, including parameters
     execution = maestro.get_execution()
 
-    maestro.login(server="https://developers.botcity.dev",login="0d7f57cc-e88c-4cb7-97b8-1e3c7d7db300",key="0D7_YGECF1TME9XCRNOBZ2SJ")
+    #maestro.login(server="https://developers.botcity.dev",login="0d7f57cc-e88c-4cb7-97b8-1e3c7d7db300",key="0D7_YGECF1TME9XCRNOBZ2SJ")
 
     print(f"Task ID is: {execution.task_id}")
     print(f"Task Parameters are: {execution.parameters}")
@@ -53,10 +53,10 @@ def main():
     bot.headless = False
 
     # Uncomment to change the default Browser to Firefox
-    bot.browser = Browser.EDGE
+    bot.browser = Browser.CHROME
 
     # Uncomment to set the WebDriver path
-    bot.driver_path = r"C:\Users\julia\BotCityProjects\Botcity Arquivos\msedgedriver.exe"
+    bot.driver_path = r"C:\Users\julia\BotCityProjects\Botcity Arquivos\chromedriver.exe"
 
     # Opens the BotCity website.
     bot.browse(r"https://buscacepinter.correios.com.br/app/faixa_cep_uf_localidade/index.php")
